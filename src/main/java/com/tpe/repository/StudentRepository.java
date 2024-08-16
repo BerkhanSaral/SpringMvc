@@ -38,7 +38,11 @@ public class StudentRepository implements IStudentRepository {
 
     @Override
     public void delete(Student student) {
-
+        Session session=sessionFactory.openSession();
+        Transaction trc=session.beginTransaction();
+        session.delete(student);
+        trc.commit();
+        session.close();
     }
 
     @Override
