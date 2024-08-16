@@ -54,7 +54,7 @@
 				</tr>
 			</c:forEach>
 		</table>
-		<p><a class="normal" href="${pageContext.request.contextPath}/students/new">Add Student</a>
+		<p><a class="normal" href="${pageContext.request.contextPath}/students/form">Add Student</a>
 	</div>
 </body>
 </html>
